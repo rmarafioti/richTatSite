@@ -41,11 +41,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
- width: 460px;
+  width: 460px;
 }
 
-.skeleton, .newsletter {
- width: 100%;
+.skeleton,
+.newsletter {
+  width: 100%;
   max-width: 600px;
   height: 340px;
   background: #f0f0f0;
@@ -79,4 +80,3 @@
     justify-content: center;
   }
 }
-
