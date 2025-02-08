@@ -7,7 +7,19 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>My Personal Website</h1>
-        <div className="ml-embedded" data-form="bkJobK"></div>
+        <iframe
+          src="https://dashboard.mailerlite.com/forms/1319105/145608201780331689/share"
+          width="100%"
+          height="360px"
+          frameBorder="0"
+          scrolling="no"
+          style={{
+            border: "none",
+            maxWidth: "600px",
+            margin: "auto",
+            display: "block",
+          }}
+        ></iframe>
         <Image
           className={styles.logo}
           src="/next.svg"
