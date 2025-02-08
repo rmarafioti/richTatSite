@@ -1,24 +1,25 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useState } from "react";
 
+import style from "@/app/styling/landingP.module.css";
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>My Personal Website</h1>
+        {isLoading && <div className={style.skeleton}>Loading Form...</div>}
         <iframe
           src="https://dashboard.mailerlite.com/forms/1319105/145608201780331689/share"
-          width="100%"
-          height="360px"
-          frameBorder="0"
+          className={style.newsletter}
           scrolling="no"
           style={{
-            border: "none",
-            maxWidth: "600px",
-            margin: "auto",
-            display: "block",
+            display: isLoading ? "none" : "block",
           }}
+          onLoad={() => setIsLoading(false)}
         ></iframe>
         <Image
           className={styles.logo}
