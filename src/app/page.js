@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>My Personal Website</h1>
+        <div className="ml-embedded" data-form="bkJobK"></div>
         <Image
           className={styles.logo}
           src="/next.svg"
