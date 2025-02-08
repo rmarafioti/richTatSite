@@ -1,0 +1,105 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.label,
+.form {
+  margin-bottom: 0.5rem;
+}
+
+.form,
+.messageForm {
+  border: 1px solid var(--foreground);
+}
+
+.form,
+.messageForm {
+  font-size: 18px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.messageForm {
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+.formSubmit,
+.contactButton {
+  background-color: goldenrod;
+  color: black;
+  height: 48px;
+  padding: 0 20px;
+  border: none;
+  border: 1px solid transparent;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contactButton {
+  display: none;
+}
+
+/* modal styling */
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(65, 0, 65, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.modalContent {
+  text-align: center;
+  background: var(--foreground);
+  padding: 1rem;
+}
+
+.modalHeader {
+  color: var(--background);
+  background: linear-gradient(-45deg, var(--primaryTeal), var(--secondaryCyan));
+  font-size: 26px;
+  font-weight: 600;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.modalSubHeader {
+  color: var(--background);
+  font-size: 18px;
+  padding: 0.5rem 1rem 2rem 1rem;
+}
+
+.modalButton {
+  background-color: gold;
+  font-size: 18px;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  margin: 1rem;
+  width: 200px;
+  border-radius: 128px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  filter: drop-shadow(-1px 1px 0.1rem #858085);
+}
+
+.modalButton:hover {
+  background-color: gold;
+}
